@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ratik-Goyal/smart-retail-root/static/css/main.e6c13ad2.css",
+    "main.js": "/Ratik-Goyal/smart-retail-root/static/js/main.126c1199.js",
+    "static/js/453.a3c1d153.chunk.js": "/Ratik-Goyal/smart-retail-root/static/js/453.a3c1d153.chunk.js",
+    "index.html": "/Ratik-Goyal/smart-retail-root/index.html",
+    "main.e6c13ad2.css.map": "/Ratik-Goyal/smart-retail-root/static/css/main.e6c13ad2.css.map",
+    "main.126c1199.js.map": "/Ratik-Goyal/smart-retail-root/static/js/main.126c1199.js.map",
+    "453.a3c1d153.chunk.js.map": "/Ratik-Goyal/smart-retail-root/static/js/453.a3c1d153.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.126c1199.js"
+  ]
+}
