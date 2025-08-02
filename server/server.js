@@ -4,9 +4,17 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
+const allowedOrigins = ['https://smart-retail-root.up.railway.app', 'http://localhost:3000', 'https://ratik-goyal.github.io'];
+app.use((req, res, next) => {
+  if (allowedOrigins.includes(req.headers.origin)) {
+    res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 app.get('/', (req, res) => res.send('API running'));
 
 mongoose.connect(process.env.MONGO_URI)
