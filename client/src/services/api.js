@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = axios.create({baseURL: 'http://localhost:5000/api'});
+const API = axios.create({baseURL: 'http://smart-retail-root.up.railway.app/api'});
 
 export const getProducts = () => API.get('/products');
 export const addProduct = (data) => API.post('/products', data);

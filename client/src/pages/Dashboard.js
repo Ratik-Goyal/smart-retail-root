@@ -10,19 +10,19 @@ function Dashboard() {
   }, []);
 
   const fetchProducts = async () => {
-    const res = await axios.get('http://localhost:5000/api/products');
+    const res = await axios.get('http://smart-retail-root.up.railway.app/api/products');
     setProducts(res.data);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/products', form);
+    await axios.post('http://smart-retail-root.up.railway.app/api/products', form);
     setForm({ name: '', price: '', quantity: '' });
     fetchProducts();
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/products/${id}`);
+    await axios.delete(`http://smart-retail-root.up.railway.app/api/products/${id}`);
     fetchProducts();
   };
 
