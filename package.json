@@ -1,0 +1,10 @@
+{
+  "name": "smart-retail-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm start --prefix client\" \"npm start --prefix server\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
